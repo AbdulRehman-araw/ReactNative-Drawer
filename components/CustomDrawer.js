@@ -10,8 +10,8 @@ const CustomDrawer = (props) => {
         <>
             <View style={{ backgroundColor: '#C4B454', minHeight: 170, marginBottom: 20, justifyContent: 'center', borderBottomLeftRadius: 20, borderBottomRightRadius: 20 }}>
                 <Image source={require('../assets/avatar.png')} style={{ height: 80, width: 80, borderRadius: 100, marginLeft: 20 }} />
-                <Text style={{ fontSize: 20, fontWeight: '400', paddingLeft: 25 }}>User </Text>
-                <Text style={{ fontSize: 12, fontWeight: '500', paddingLeft: 25 }}>abc@gmail.com</Text>
+                <Text style={{ fontSize: 20, fontWeight: '400', paddingLeft: 30 }}>User </Text>
+                <Text style={{ fontSize: 12, fontWeight: '500', paddingLeft: 30 }}>abc@gmail.com</Text>
             </View>
 
             <DrawerContentScrollView {...props}>

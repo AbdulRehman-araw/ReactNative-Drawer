@@ -18,21 +18,20 @@ const Drawer = createDrawerNavigator();
 const AppDrawer = () => {
   return (
     <Drawer.Navigator drawerContent={(props) => <CustomDrawer {...props}
-    />}>
+    />} initialRouteName='Profile'>
         <Drawer.Screen name='Home' component={Home} 
         options={{
-            drawerType:'permanent',
             drawerActiveTintColor:'#FFFFF0',
             drawerInactiveTintColor:'#C4B454',
             drawerActiveBackgroundColor:'#C4B454',
             drawerInactiveBackgroundColor:'#FFFFF0',
            headerStyle: {
-             backgroundColor: '#FFFFF0',
+             backgroundColor: '#C4B454',
            },
-           headerTintColor: '#C4B454',
+           headerTintColor: '#FFFFF0',
            headerTitleStyle: {
              fontWeight: 'bold',
-             color: '#C4B454'
+             color: '#FFFFF0'
            },
          }}
         />
@@ -42,14 +41,14 @@ const AppDrawer = () => {
             drawerInactiveTintColor:'#C4B454',
             drawerActiveBackgroundColor:'#C4B454',
             drawerInactiveBackgroundColor:'#FFFFF0',
-           headerStyle: {
-             backgroundColor: '#FFFFF0',
-           },
-           headerTintColor: '#C4B454',
-           headerTitleStyle: {
-             fontWeight: 'bold',
-             color: '#C4B454'
-           },
+            headerStyle: {
+                backgroundColor: '#C4B454',
+              },
+              headerTintColor: '#FFFFF0',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                color: '#FFFFF0'
+              },
          }}
         />
         <Drawer.Screen name='Contact' component={Contact}
@@ -58,30 +57,30 @@ const AppDrawer = () => {
             drawerInactiveTintColor:'#C4B454',
             drawerActiveBackgroundColor:'#C4B454',
             drawerInactiveBackgroundColor:'#FFFFF0',
-           headerStyle: {
-             backgroundColor: '#FFFFF0',
-           },
-           headerTintColor: '#C4B454',
-           headerTitleStyle: {
-             fontWeight: 'bold',
-             color: '#C4B454'
-           },
+            headerStyle: {
+                backgroundColor: '#C4B454',
+              },
+              headerTintColor: '#FFFFF0',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                color: '#FFFFF0'
+              },
          }}
         />
-        <Drawer.Screen name='Terms' component={TermsConditions}
+        <Drawer.Screen name='Terms & Conditions' component={TermsConditions}
          options={{
             drawerActiveTintColor:'#FFFFF0',
             drawerInactiveTintColor:'#C4B454',
             drawerActiveBackgroundColor:'#C4B454',
             drawerInactiveBackgroundColor:'#FFFFF0',
-           headerStyle: {
-             backgroundColor: '#FFFFF0',
-           },
-           headerTintColor: '#C4B454',
-           headerTitleStyle: {
-             fontWeight: 'bold',
-             color: '#C4B454'
-           },
+            headerStyle: {
+                backgroundColor: '#C4B454',
+              },
+              headerTintColor: '#FFFFF0',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+                color: '#FFFFF0'
+              },
          }}
         />
     </Drawer.Navigator>
